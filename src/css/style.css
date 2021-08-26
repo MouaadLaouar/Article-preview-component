@@ -112,7 +112,42 @@ section .content .profil .share:hover .social {
 
 @media only screen and (max-width: 450px) {
   body {
-    background-color: red;
+    height: 100%;
+    width: 100%;
+  }
+  section {
+    margin: 50px;
+    height: 600px;
+    width: 300px;
+    grid-template-rows: 40% 60%;
+    grid-template-columns: 100%;
+  }
+  section #big-pic {
+    border-radius: 10px 10px 0px 0px;
+  }
+  section .content {
+    padding: 30px 30px 0px 30px;
+    display: grid;
+  }
+  section .content h1 {
+    font-size: 15px;
+  }
+  section .content .profil .pic {
+    height: 40px;
+    width: 40px;
+  }
+  section .content .profil .share {
+    height: 30px;
+    width: 30px;
+  }
+  section .content .profil .share:hover .social {
+    height: 75px;
+    width: 301px;
+    transform: translateY(16px) translateX(-87px);
+    border-radius: 0px 0px 10px 10px;
+  }
+  section .content .profil .share:hover #btn {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
