@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #9eafc2;
+}
+
+section {
+  height: 300px;
+  width: 700px;
+  background-color: #ecf2f8;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  border-radius: 10px;
+}
+
+section #big-pic {
+  background-image: url(../../images/drawers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 0px 0px 10px;
+}
+
+section .content {
+  padding: 30px;
+}
+
+section .content h1 {
+  font-size: 20px;
+}
+
+section .content p {
+  margin-top: 10px;
+  color: #6d7f97;
+}
+
+section .content .profil {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  margin-top: 10px;
+}
+
+section .content .profil .pic {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-image: url(../../images/avatar-michelle.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+section .content .profil div:nth-child(2) h1, section .content .profil div:nth-child(2) p {
+  font-size: 13px;
+}
+
+section .content .profil .share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #9eafc2;
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+}
+
+section .content .profil .share .social {
+  position: absolute;
+  height: 50px;
+  width: 200px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #6d7f97;
+  transform: translateY(-60px);
+}
+
+section .content .profil .share .social #btn {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  background-color: #6d7f97;
+  transform: translateY(25px) rotate(45deg);
+}
+
+section .content .profil .share .social div:nth-child(2) {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+section .content .profil .share .social div:nth-child(2) h1 {
+  color: #48556a;
+}
+
+section .content .profil .share:hover .social {
+  display: flex;
+}
+
+@media only screen and (max-width: 450px) {
+  body {
+    background-color: red;
+  }
+}
+/*# sourceMappingURL=style.css.map */
